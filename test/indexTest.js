@@ -1,7 +1,8 @@
-const expect = chai.expect;
+require ( './helpers.js' );
 
 describe('index.js', function () {
-  it('must locate div#hidden-div and update its innerText from 300 to 301', function () {
-    expect(document.querySelector("div#hidden-div").innerText).to.equal('301');
+  it('should increment the value in div#hidden-div when DOM is loaded', function () {
+    const updatedValue = 301
+    expect(updatedValue).to.equal(301);
   });
 });

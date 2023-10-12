@@ -1,32 +1,23 @@
 {
-  "name": "jsdom-mod-document-domcontentloaded-lab",
-  "version": "0.1.0",
-  "description": "jsdom-mod-document-domcontentloaded-lab",
+  "name": "javascript-lab",
+  "version": "1.0.0",
+  "description": "A JavaScript lab",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gem install learn-co",
-    "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/learn-co-curriculum/jsdom-mod-document-domcontentloaded-lab.git"
+  "author": "flatironschool",
+  "license": "Included in Repo",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "chai": "^4.2.0",
+    "jsdom": "^9.0",
+    "mocha": "5.2.0",
+    "mocha-jsdom": "~1.1.0",
+    "mocha-multi": "^1.0.1"
   },
-  "keywords": [
-    "learn",
-    "flatiron school",
-    "javascript",
-    "control flow",
-    "if",
-    "else",
-    "lab"
-  ],
-  "author": "@jk",
-  "license": "SEE LICENSE IN LICENSE.md",
-  "bugs": {
-    "url": "https://github.com/learn-co-curriculum/jsdom-mod-document-domcontentloaded-lab/issues"
-  },
-  "homepage": "https://github.com/learn-co-curriculum/jsdom-mod-document-domcontentloaded-lab#readme",
   "devDependencies": {
-    "learn-browser": "^0.1.13"
+    "@testing-library/dom": "^9.3.3"
   }
 }
